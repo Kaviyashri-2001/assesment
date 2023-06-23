@@ -1,0 +1,17 @@
+2.DATA TYPES OF JAVASCRIPT:
+
+1)Number- it is used for number variables it can also return in floating point[ex: let x=3]
+
+2)String-it is used for combination of characters called string within singke or double quotes[ex:"hello"]
+
+3)Boolean-it is used to boolean values either true or false[ex:w=true]
+
+4)BigInt-it is used for longer values in number type it particular range so BigInt is used.It does not has decimal value.
+
+5)Undefined-it is used to undefined the value of the variable[ex: let x=undefined]
+
+6)Null-it is used to empty the value of variable[ex: y=null]
+
+7)object- it has many values [ex:{car,bike,cycle}]
+
+8)Array object-it is has property used to access the array which has name value pair[ex:[car:"bmw";color:"red"]]
