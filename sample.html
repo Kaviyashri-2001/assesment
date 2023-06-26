@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <script>
+    let todos = [];
+
+    function addTodo() {
+      let Input = document.getElementById('msg');
+      let todo = Input.value;
+
+      if (todo !== '') {
+        todos.push(todo);
+        Input.value = '';
+        displayTodos();
+      }
+    }
+
+
+    function displayTodos() {
+      let todoList = document.getElementById('todoList');
+      todoList.innerHTML = '';
+
+      for (let i = 0; i < todos.length; i++) {
+        let todo = todos[i];
+
+        let todoItem = document.createElement('li');
+        todoItem.innerHTML = todo;
+        todoList.appendChild(todoItem);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Todo App</h1>
+  <input type="text" id="msg" placeholder="Enter a todo">
+  <button onclick="addTodo()">Add Todo</button>
+  <ul id="todoList"></ul>
+</body>
+</html>
