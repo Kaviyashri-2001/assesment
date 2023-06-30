@@ -1,0 +1,73 @@
+1)Differnce between interface and Abstract class:
+
+*In interface multiple  inheritance  can be achieved but in abstract class multiple  inheritance can not be done
+*Abstract class contains both declaration and implementation part whereas interface contains only the declaration of methods.
+*A class can contain only one abstract class.	
+*A class can cantain multiple interface.
+*For both interface and Abstract class object can  not be created.It can accessed through derived class
+
+2)Constructor and Object:
+
+Constructor-A special method of the class that is automatically caleed when an object of the class is created is known a constructor.
+The constructor name is the same as the class name
+A class can have many number of constructors.A constructor does not have any return type.
+
+Object-A combination of data members and methods in a class is known as object.
+The data member in the sense the property of the object and the methods are the action performed by the object.
+Example: public class Student  
+           {  
+                int id; 
+                String name;
+                public void play();  
+           }  
+
+3)Virtual and Override:
+
+virtual and override keywords are in method overriding of polymorphism.virtual keyword is used to to modify the methods in base class, 
+whereas override keyword is used to modify the methods in derived class.
+
+4)Abstract can be sealed:
+
+Abstract class can not be sealed class because the abstract class should be inherited for accessing its methods.
+If it is declared as a selead class it can't be inherited.
+
+5) C# program to convert from degrees Celsius to Kelvin and Fahrenheit from user input given in console:
+
+using System;
+public class temperature
+{
+    double celsius = Double.Parse(Console.ReadLine());
+    public void Kelvin()
+    {
+         double kelvin = celsius + 273;
+         Console.WriteLine(" The kelvin:{0}",kelvin);
+    }
+    public void Fahrenheit()
+    {
+        double fahrenheit= celsius*18/10+32;
+         Console.WriteLine("The Fahrenheit:{0}",fahrenheit);
+    }
+}
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter celsius value");
+       temperature obj=new temperature();
+        obj.Kelvin();
+        obj.Fahrenheit();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
