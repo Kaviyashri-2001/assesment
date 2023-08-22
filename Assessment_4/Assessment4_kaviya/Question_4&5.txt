@@ -1,0 +1,17 @@
+4) Type of Namespace is used for file operation in C#:
+
+The namespace used for file operation is "System.IO",it has various classes that are used to performing  operations with files, like read and write,etc.
+Some of the classes it has are,
+* FileStream
+* StreamWriter
+* StreamReader
+* BinaryWriter
+* BinaryReader
+* DirectoryInfo
+* FileInfo,etc.
+
+5)breakpoint and code debug:
+
+*It is a point where the code execute until this point after it stops debugging the code.
+*F10 is used to continue debug after breakpoint
+*It is marked on the whitespace.
